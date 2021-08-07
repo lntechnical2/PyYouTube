@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(
-    name="PyYoutube",
+    name="pyYoutube",
     version="0.0.1",
     author="mrlokaman",
     author_email="ln0technical@gmail.com",
