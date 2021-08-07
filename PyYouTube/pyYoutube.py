@@ -123,7 +123,6 @@ class Data:
        self.title = title 
        self.thumbnails = thumb
        self.views = views
-       self.description = desc
        self.likes = likes
        self.dislikes = dislikes
        self.publishdate =  publish_date
