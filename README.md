@@ -7,13 +7,13 @@ Get Video Data from YouTube link
 
 ## How to use it ?
 
-```
-from pyyoutube import Data
+
+```from pyyoutube import Data
 
 yt = Data("")
 print(yt.data)
-
 ```
+
 ## License 
 Copyright (c) 2021 Lntechnical
 
