@@ -10,7 +10,7 @@ Get Video Data from YouTube link
 
 ```python
 from pyyoutube import Data
-yt = Data("")
+yt = Data("https://youtu.be/HhHzCfrqsoE")
 print(yt.data)
 ```
 
