@@ -22,6 +22,8 @@ from pyyoutube import Data
 yt = Data("https://youtu.be/HhHzCfrqsoE")
 print(yt.data)
 ```
+<details>
+<summary> Example Result</summary>
 ```json
 {
   "id": "HhHzCfrqsoE",
@@ -36,7 +38,8 @@ print(yt.data)
   "subscriber": "1.15K subscribers"
 }
 ```
-
+</details>
+  
 #### Search Videos
 > Get videos link 
 ```python 
