@@ -91,16 +91,16 @@ class Data:
       		category = None       		
       	try:
       		# Get Channel Name 
-      		channelName = e.findall("\"channelName\":\"(.+?)\",", source)[0]
+      		channelName = re.findall("\"ownerChannelName\":\"(.+?)\",\"uploadDate",source)[0]
       	except:
       		try:
-      			channelName = re.findall("\"ownerChannelName\":\"(.+?)\",\"uploadDate",source)[0]
+      			channelName = e.findall("\"channelName\":\"(.+?)\",", source)[0]
       		except:
       			channelName = None
       			
       	try:
       		#Get likes Of The Video 
-      		likes = re.findall("accessibilityData\":{\"label\":\"(\d+) likes", source)[0]
+      		likes = re.findall("accessibilityData\":{\"label\":\"(.+?) likes", source)[0]
       	except:
       		likes = None 
       	try:
@@ -110,7 +110,7 @@ class Data:
       		dislikes = None 
       	try:
       		#Get Subscriber of The video 
-      		sub = re.findall("accessibilityData\":{\"label\":\"(\S+) subscribers", source)[0]
+      		sub = re.findall("\"subscriberCountText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"", source)[0]
       	except:
       		sub = None
       	#Get all Data in JSON Format 
@@ -140,24 +140,6 @@ class Data:
       	self.channel_name = channelName
       	self.subscriber = sub
 
-	
-"""
-
-Search Youtube Video 
-
-Example:
-	
-from pyyoutube import Search
-
-yt = Search("ln technical")
-
-print(yt.videos)
-
-OUTPUT :
-	['https://youtu.be/{11}']
-"""		
-			
-					
 class Search:
 	def __init__(self,keywords):
 		search_keyword=keywords.replace(" ", "+")
@@ -171,6 +153,5 @@ class Search:
 		video_link = []
 		for i in video_ids:
 			id = 'https://youtu.be/'+i
-			link.append(id)
-		self.videos = video_link
-				   	
+			video_link.append(id)
+		self.videos = video_link		   	
