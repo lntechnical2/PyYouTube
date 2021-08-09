@@ -17,11 +17,13 @@ print(yt.data)
 ```
 
 #### Search Videos
+> Get videos link 
 ```python 
 from pyyoutube import Search
 yt = Search("ln technical")
 print(yt.videos)
 ```
+> Get Video Data 
 ```python 
 from pyyoutube import Search Data 
 yt = Search("ln technical")
