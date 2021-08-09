@@ -54,11 +54,9 @@ print(yt.videos)
 ```python 
 from pyyoutube import Search ,Data 
 yt = Search("ln technical").videos
-results = []
 for vid in yt:
-     res = Data(vid).data
-     results.append(res)
-print(results)
+  res = Data(vid).data
+  print(res)
 ```
 
 ## License 
