@@ -58,6 +58,11 @@ for vid in yt:
   res = Data(vid).data
   print(res)
 ```
+```json
+{'id': 'jEnlga0hYyY', 'title': 'Tutorial 1 - History of Infor ERP LN', 'thumbnails': 'https://i.ytimg.com/vi/jEnlga0hYyY/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLC9vnXpG2XmDpNfwZHEBMdo8GVf-A', 'views': '9957', 'likes': '80', 'dislikes': '1', 'publishdate': '2017-11-07', 'category': 'Education', 'channel_name': 'Infor LN Technical Trainer', 'subscriber': '935 subscribers'}
+{'id': 'jEnlga0hYyY', 'title': 'Tutorial 1 - History of Infor ERP LN', 'thumbnails': 'https://i.ytimg.com/vi/jEnlga0hYyY/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLC9vnXpG2XmDpNfwZHEBMdo8GVf-A', 'views': '9957', 'likes': '80', 'dislikes': '1', 'publishdate': '2017-11-07', 'category': 'Education', 'channel_name': 'Infor LN Technical Trainer', 'subscriber': '935 subscribers'}
+```
+
 
 ## License 
 Copyright (c) 2021 Lntechnical
