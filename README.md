@@ -94,7 +94,10 @@ from pyyoutube import Search ,Data
 yt = Search("ln technical").videos[:3] #limit [:3]
 print(yt)
 ```
-
+>Example Result 
+```bash
+['https://youtu.be/jEnlga0hYyY', 'https://youtu.be/jEnlga0hYyY', 'https://youtu.be/Fxj5ZpaNq24']
+```
 ## License 
 Copyright (c) 2021 Lntechnical
 
