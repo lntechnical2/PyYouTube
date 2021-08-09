@@ -4,7 +4,8 @@ Get Video Data from YouTube link
 
 ## Installation 
 ```bash
-pip install PyYouTube```
+pip install PyYouTube
+```
 
 ## How to use it ?
 
