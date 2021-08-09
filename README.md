@@ -33,7 +33,7 @@ print(yt.videos)
 
 <details>
 <summary> Example Result</summary>
-```json
+```bash
 {
   "id": "HhHzCfrqsoE",
   "title": "How To Create MongoDB Database  Url",
