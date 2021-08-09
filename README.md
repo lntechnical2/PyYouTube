@@ -32,14 +32,21 @@ print(yt.videos)
 ```
 
 <details>
- <summary> Example Result</summary>
-  ```json
-  {'id': 'HhHzCfrqsoE', 'title': 'How To Create MongoDB Database  Url', 'thumbnails':
-  'https://i.ytimg.com/vi/HhHzCfrqsoE/hqdefault.jpg?sqp=
-  oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLBOkJZAdEpYxQOVdaUxFHdbThH_DQ', 'views': '91',
-  'likes': '11', 'dislikes': 'No', 'publishdate': '2021-08-04', 'category': 'Howto \\u0026 Style', 'channel_name': 'Ln
-  Technical', 'subscriber': '1.15K subscribers'}
-  ```
+<summary> Example Result</summary>
+```json
+{
+  "id": "HhHzCfrqsoE",
+  "title": "How To Create MongoDB Database  Url",
+  "thumbnails": "https://i.ytimg.com/vi/HhHzCfrqsoE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLBOkJZAdEpYxQOVdaUxFHdbThH_DQ",
+  "views": "91",
+  "likes": "11",
+  "dislikes": "No",
+  "publishdate": "2021-08-04",
+  "category": "Howto \\u0026 Style",
+  "channel_name": "Ln Technical",
+  "subscriber": "1.15K subscribers"
+}
+```
 </details>
 
 > Get Video Data 
