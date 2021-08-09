@@ -88,6 +88,12 @@ for vid in yt:
 ]
 ```
 
+#### Search Limits Video 
+```python 
+from pyyoutube import Search ,Data 
+yt = Search("ln technical").videos[:3] #limit [:3]
+print(yt)
+```
 
 ## License 
 Copyright (c) 2021 Lntechnical
