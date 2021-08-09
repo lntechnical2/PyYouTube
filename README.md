@@ -25,7 +25,7 @@ print(yt.videos)
 ```
 > Get Video Data 
 ```python 
-from pyyoutube import Search Data 
+from pyyoutube import Search ,Data 
 yt = Search("ln technical")
 results = []
 for vid in yt:
