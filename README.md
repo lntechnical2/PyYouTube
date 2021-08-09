@@ -33,8 +33,7 @@ print(yt.videos)
 
 <details>
 <summary> Example Result</summary>
-```bash
-{
+  {
   "id": "HhHzCfrqsoE",
   "title": "How To Create MongoDB Database  Url",
   "thumbnails": "https://i.ytimg.com/vi/HhHzCfrqsoE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLBOkJZAdEpYxQOVdaUxFHdbThH_DQ",
@@ -46,7 +45,6 @@ print(yt.videos)
   "channel_name": "Ln Technical",
   "subscriber": "1.15K subscribers"
 }
-```
 </details>
 
 > Get Video Data 
