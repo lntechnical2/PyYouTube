@@ -39,7 +39,7 @@ print(yt.data)
 ```
   
 #### Search Videos
-> Get videos link 
+ Get videos link 
 ```python 
 from pyyoutube import Search
 yt = Search("ln technical")
@@ -50,7 +50,7 @@ print(yt.videos)
 ['https://youtu.be/jEnlga0hYyY', 'https://youtu.be/jEnlga0hYyY', 'https://youtu.be/Fxj5ZpaNq24', 'https://youtu.be/bAyh6FU01ho', 'https://youtu.be/DPCN3abXmsc', 'https://youtu.be/ros6m2BBI84', 'https://youtu.be/jEnlga0hYyY', 'https://youtu.be/hbtfaAx4bBE', 'https://youtu.be/qvBt04Q60Mg', 'https://youtu.be/1T3rAZH4rmw']
 ```
 
-> Get Video Data 
+ Get Video Data 
 ```python 
 from pyyoutube import Search ,Data 
 yt = Search("ln technical").videos
