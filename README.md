@@ -91,7 +91,7 @@ for vid in yt:
 #### Search Limits Video 
 ```python 
 from pyyoutube import Search ,Data 
-yt = Search("ln technical").videos[:3] #limit [:3]
+yt = Search("ln technical", limit = 3).videos
 print(yt)
 ```
 >Example Result 
