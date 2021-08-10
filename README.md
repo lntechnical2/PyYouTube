@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://www.python.org">
-    <img src="https://tg-link.herokuapp.com/dl/0/Capture%202021-08-10%2010.06.13.jpg">
+    <img src="https://tg-link.herokuapp.com/dl/0/AgADhawxGz-ZkVQ.jpg">
 
   </a>
 
