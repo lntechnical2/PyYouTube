@@ -68,7 +68,9 @@ for vid in yt:
   res = Data(vid).data
   print(res)
 ```
->Example Result
+<details>
+  <summary><b>Example Results</summary>
+<br/>
 ```json
 [
   {
@@ -97,6 +99,7 @@ for vid in yt:
   }
 ]
 ```
+</details>
 
 #### Search Limits Video 
 ```python 
