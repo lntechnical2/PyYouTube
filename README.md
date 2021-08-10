@@ -50,10 +50,15 @@ from pyyoutube import Search
 yt = Search("ln technical")
 print(yt.videos)
 ```
-> Example Result
+<details>
+  <summary><b>Example Results</summary>
+<br/>
+
 ```bash
 ['https://youtu.be/jEnlga0hYyY', 'https://youtu.be/jEnlga0hYyY', 'https://youtu.be/Fxj5ZpaNq24', 'https://youtu.be/bAyh6FU01ho', 'https://youtu.be/DPCN3abXmsc', 'https://youtu.be/ros6m2BBI84', 'https://youtu.be/jEnlga0hYyY', 'https://youtu.be/hbtfaAx4bBE', 'https://youtu.be/qvBt04Q60Mg', 'https://youtu.be/1T3rAZH4rmw']
 ```
+
+</details>
 
  Get Video Data 
 ```python 
