@@ -31,7 +31,7 @@ OUTPUT :
 
 import re
 import urllib.request
-
+import json
 
 class Data:
       
@@ -39,7 +39,7 @@ class Data:
       	Get YouTube Video Data 
       	
       """
-      def __init__(self,link):
+      def __init__(self,link:str):
       
       	try:
       		html = urllib.request.urlopen(link)
@@ -55,7 +55,7 @@ class Data:
       		self.category = e
       		self.channel_name = e
       		self.subscriber = e
-      		return 
+      		return
       	source = html.read().decode()
       	try:
       		# Get Video Details 
@@ -113,7 +113,7 @@ class Data:
       		sub = re.findall("\"subscriberCountText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"", source)[0]
       	except:
       		sub = None
-      	#Get all Data in JSON Format 
+      	#Get all Data in JSON Format
       	self.data = { 
       	             "id": id,
       	             "title": title,
@@ -126,7 +126,6 @@ class Data:
       	             "channel_name": channelName,
       	             "subscriber":sub
       	        }
-      	        
       	        
       	#  Get Specific Value 
       	self.id = id
@@ -141,7 +140,7 @@ class Data:
       	self.subscriber = sub
 
 class Search:
-	def __init__(self,keywords):
+	def __init__(self,keywords:str , limit: int=10):
 		search_keyword=keywords.replace(" ", "+")
 		try:
 			html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search_keyword)
@@ -149,7 +148,7 @@ class Search:
 			self.videos = e
 			return
 		source = html.read().decode()
-		video_ids = re.findall(r"watch\?v=(\S{11})", source)[:10]
+		video_ids = re.findall(r"watch\?v=(\S{11})", source)[:limit]
 		video_link = []
 		for i in video_ids:
 			id = 'https://youtu.be/'+i
