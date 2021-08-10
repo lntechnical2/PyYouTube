@@ -53,7 +53,7 @@ print(yt.videos)
  Get Video Data 
 ```python 
 from pyyoutube import Search ,Data 
-yt = Search("ln technical").videos
+yt = Search("ln technical" , limit = 2).videos
 for vid in yt:
   res = Data(vid).data
   print(res)
