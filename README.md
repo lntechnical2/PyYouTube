@@ -69,7 +69,7 @@ for vid in yt:
   print(res)
 ```
 <details>
-  <summary><b>Example Results</summary>
+  <summary>Example Results</summary>
 <br/>
 ```json
 [
