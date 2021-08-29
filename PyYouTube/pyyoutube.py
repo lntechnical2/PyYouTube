@@ -138,7 +138,7 @@ class Data:
       	             "publishdate": publish_date,
       	             "category": category,
       	             "channel_name": channelName,
-      	             "subscriber":sub
+      	             "subscriber":sub,
                      "tags":tags
       	        }
       	        
