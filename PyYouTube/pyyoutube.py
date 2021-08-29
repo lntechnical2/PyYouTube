@@ -123,7 +123,6 @@ class Data:
                 request = requests.get(link)
                 soup = BeautifulSoup(request.content, 'html5lib') 
                 tags = ', '.join([ meta.attrs.get("content") for meta in soup.find_all("meta", {"property": "og:video:tag"}) ])
-                text_yt_formatted_strings = soup.find_all("yt-formatted-string", {"id": "text", "class": "ytd-toggle-button-renderer"})
         except:
                 tags = None
 
