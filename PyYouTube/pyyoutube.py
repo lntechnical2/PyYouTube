@@ -26,12 +26,17 @@ OUTPUT :
       	             "category": category,
       	             "channel_name": channelName,
       	             "subscriber":sub
+                     "tags":tags
 	}
 """
 
 import re
 import urllib.request
 import json
+import requests
+from bs4 import BeautifulSoup
+import html5lib
+
 
 class Data:
       
@@ -55,6 +60,7 @@ class Data:
       		self.category = e
       		self.channel_name = e
       		self.subscriber = e
+                self.tags = e
       		return
       	source = html.read().decode()
       	try:
@@ -113,6 +119,14 @@ class Data:
       		sub = re.findall("\"subscriberCountText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"", source)[0]
       	except:
       		sub = None
+        try:
+                request = requests.get(link)
+                soup = BeautifulSoup(request.content, 'html5lib') 
+                tags = ', '.join([ meta.attrs.get("content") for meta in soup.find_all("meta", {"property": "og:video:tag"}) ])
+                text_yt_formatted_strings = soup.find_all("yt-formatted-string", {"id": "text", "class": "ytd-toggle-button-renderer"})
+        except:
+                tags = None
+
       	#Get all Data in JSON Format
       	self.data = { 
       	             "id": id,
@@ -125,6 +139,7 @@ class Data:
       	             "category": category,
       	             "channel_name": channelName,
       	             "subscriber":sub
+                     "tags":tags
       	        }
       	        
       	#  Get Specific Value 
@@ -138,6 +153,7 @@ class Data:
       	self.category = category
       	self.channel_name = channelName
       	self.subscriber = sub
+        self.tags = tags
 
 class Search:
 	def __init__(self,keywords:str , limit: int=10):
