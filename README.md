@@ -1,11 +1,5 @@
 # PyYouTube 
 
-<p align="center">
-  <a href="https://www.python.org">
-    <img src="https://tg-link.herokuapp.com/dl/0/AgADhawxGz-ZkVQ.jpg">
-
-  </a>
-
 
 Get Video Data from YouTube link 
 
