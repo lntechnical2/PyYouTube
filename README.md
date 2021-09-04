@@ -105,7 +105,8 @@ print(yt.videos())
 <details>
   <summary>Example Results</summary>
 <br/>
-```bash
+  
+```
 ['https://youtu.be/jEnlga0hYyY', 'https://youtu.be/jEnlga0hYyY', 'https://youtu.be/Fxj5ZpaNq24']
 ```
 </details>
