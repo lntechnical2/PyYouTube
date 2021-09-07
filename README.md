@@ -36,6 +36,12 @@ print(yt.data())
 ```
 
 </details>
+#### Get Youtube Url
+```python
+from pyyoutube import ytdl
+video = ytdl("https://youtu.be/7BX0paTfllI")
+print(video.url('18')
+```
 
 #### Search Videos
  Get videos link 
