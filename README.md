@@ -53,6 +53,7 @@ print(video.formats()
 <details>
   <summary>Example Results</summary>
 <br/>
+  
 ```bash
 ['139 - audio only (DASH audio)', '140 - audio only (tiny)', '251 - audio only (tiny)', '278 - 256x144 (DASH video)', '160 - 256x144 (DASH video)', '242 - 426x240 (DASH video)', '133 - 426x240 (DASH video)', '134 - 640x360 (360p)', '243 - 640x360 (DASH video)', '244 - 854x480 (DASH video)', '135 - 854x480 (DASH video)', '247 - 1280x720 (DASH video)', '136 - 1280x720 (DASH video)', '137 - 1920x1080 (1080p)', '248 - 1920x1080 (DASH video)', '18 - 640x360 (360p)', '22 - 1280x720 (720p)']
 ```
