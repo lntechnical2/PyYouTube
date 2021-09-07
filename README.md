@@ -42,7 +42,7 @@ print(yt.data())
 ```python
 from pyyoutube import ytdl
 video = ytdl("https://youtu.be/7BX0paTfllI")
-print(video.url(itag = '18')
+print(video.url(itag = '18'))
 ```
   Get formats 
 ```python
