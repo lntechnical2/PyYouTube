@@ -68,4 +68,11 @@ class ytdl:
 		  if url:
 		  	return url[0]		  	
 		  else:
-		  	raise Error('this tag not avilable')			  			 	  	 						 	  	 				
+		  	raise Error('this tag not avilable')
+	
+	def besturl(self):
+		formats_ = self.format
+		for qu in formats_ :
+			if qu['acodec'] != 'none' and qu['vcodec'] != 'none':
+				url_ = qu['url']
+		return url_	  	 						 	  	 				
