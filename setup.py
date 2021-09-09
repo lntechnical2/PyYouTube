@@ -22,6 +22,5 @@ setuptools.setup(
     ],
     packages=setuptools.find_packages(),
     install_requires = ["youtube_dl"],
-    python_requires=">=3.6",
-    
+    python_requires=">=3.6"
 )
