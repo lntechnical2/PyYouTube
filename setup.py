@@ -6,7 +6,7 @@ file = pathlib.Path(__file__).parent
 README = (file / "README.md").read_text()
 
 setuptools.setup(
-    name="PyYouTube",
+    name='PyYouTube',
     version="1.0.6",
     author="mrlokaman",
     author_email="ln0technical@gmail.com",
