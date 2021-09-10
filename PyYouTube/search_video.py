@@ -3,7 +3,7 @@
 All rights reserved by LN Technical
 
 """
-# This Modules Helps To Get Youtube Video Data 
+
 """
 MIT License
 
@@ -28,25 +28,39 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 """
+
+
+# This Modules Helps To Get Youtube Video Data 
+
+
 import re
 import urllib.request
 import json
+from pyyoutube import Data
 
 
 class Search:
 	
-	def __init__(self,keywords:str , limit=15):
+	def __init__(self,keywords:str , limit=10):
 		
 		search_keyword=keywords.replace(" ", "+")
 		html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search_keyword)
 		self.limit= limit
 		self.source = html.read().decode()
-	
-	def videos(self):
 		video_ids = re.findall(r"watch\?v=(\S{11})", self.source)[:self.limit]
-		video_link = []
+		self.video_link = []
 		for i in video_ids:
 			id = 'https://youtu.be/'+i
 			video_link.append(id)
-		return video_link
-		     	
+		
+	def videos(self):
+		data = []
+		video_ids = re.findall(r"watch\?v=(\S{11})", self.source)[:self.limit]
+		link = self.video_link
+		for i in video_ids:
+			id = 'https://youtu.be/'+i
+			link.append(id)		
+		for i in link:
+			_data = Data(i).data()
+			data.append(_data)
+		return data		
