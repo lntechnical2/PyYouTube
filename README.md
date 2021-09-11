@@ -63,7 +63,7 @@ print(video.formats()
  Search video Data
 ```python 
 from pyyoutube import Search
-yt = Search("ln technical" limit = 2)
+yt = Search("ln technical")
 print(yt.videos())
 ```
 <details>
