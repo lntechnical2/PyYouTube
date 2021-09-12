@@ -1,6 +1,12 @@
 import pathlib
 import setuptools
 
+
+def read(file: str) -> list:
+    with open(file, encoding="utf-8") as r:
+        return [i.strip() for i in r]
+
+
 file = pathlib.Path(__file__).parent
 
 README = (file / "README.md").read_text()
@@ -21,7 +27,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
-    install_requires = ["youtube_dl"],
-    python_requires=">=3.6",
-    
+    install_requires = read("requirements.txt"),
+    python_requires=">=3.6"
 )
