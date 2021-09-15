@@ -12,7 +12,7 @@ pip install PyYouTube==1.0.7
 #### Get Videos Data 
 
 ```python
-from pyyoutube import Data
+from py_youtube import Data
 yt = Data("https://youtu.be/HhHzCfrqsoE")
 print(yt.data())
 ```
@@ -40,13 +40,13 @@ print(yt.data())
 #### Get Youtube Url
   Get video url
 ```python
-from pyyoutube import ytdl
+from py_youtube import ytdl
 video = ytdl("https://youtu.be/7BX0paTfllI")
 print(video.url(itag = '18'))
 ```
   Get formats 
 ```python
-from pyyoutube import ytdl
+from py_youtube import ytdl
 video = ytdl("https://youtu.be/7BX0paTfllI")
 print(video.formats())
 ```
@@ -214,7 +214,7 @@ print(yt.videos())
 
 ## Search Limits Video 
 ```python 
-from pyyoutube import Search ,Data 
+from py_youtube import Search ,Data 
 yt = Search("ln technical", limit = 3)
 print(yt.videos())
 ```
