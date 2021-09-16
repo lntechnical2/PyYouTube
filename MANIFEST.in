@@ -1,2 +1,5 @@
-include README.md requirements.txt LICENSE
-recursive-include PyYouTube *.py
+include README.md 
+requirements.txt 
+LICENSE
+recursive-include 
+py_youtube*.py
