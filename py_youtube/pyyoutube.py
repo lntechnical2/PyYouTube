@@ -47,7 +47,7 @@ class Data:
       		headers = { 'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)' }
       		res = urllib.request.Request(link, headers=headers)
       		html = urllib.request.urlopen(res)
-      		self.source = html.read().decode()
+      		self.source = html.read().decode('utf8')
       		     		
       		
       # Get Video id 
