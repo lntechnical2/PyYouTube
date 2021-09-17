@@ -46,7 +46,7 @@ class Search:
 		search_keyword=keywords.replace(" ", "+")
 		html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search_keyword)
 		self.limit= limit
-		self.source = html.read().decode()
+		self.source = html.read().decode('utf8')
 		
 		
 	def videos(self):
