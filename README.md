@@ -8,6 +8,13 @@ Get Video Data from YouTube link
 pip install py-youtube==1.1.2
 ```
 
+### Downloads 
+![Downloads](https://pepy.tech/badge/py-youtube)](https://pepy.tech/project/py-youtube)
+
+[![Downloads](https://pepy.tech/badge/py-youtube/month)](https://pepy.tech/project/py-youtube)
+
+[![Downloads](https://pepy.tech/badge/py-youtube/week)](https://pepy.tech/project/py-youtube)
+
 ## How to use it ?
 #### Get Videos Data 
 
