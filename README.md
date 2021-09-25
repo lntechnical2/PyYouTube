@@ -13,8 +13,8 @@
 
   </a>
   
-  <a href="https://github.com/lntechnical2/PyYouTubr/fork">
-    <img src="https://img.shields.io/github/forks/lntechnical2/PyYouTubr?label=Fork&style=social">
+  <a href="https://github.com/lntechnical2/PyYouTube/fork">
+    <img src="https://img.shields.io/github/forks/lntechnical2/PyYouTube?label=Fork&style=social">
 
   </a>  
 </p></p>
