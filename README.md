@@ -5,11 +5,19 @@
   </a>
 </p>
 </p>
+
+</p>
 <p align="center">
   <a href="https://github.com/lntechnical2/PyYouTube/stargazers">
     <img src="https://img.shields.io/github/stars/lntechnical2/PyYouTube?style=social">
 
   </a>
+  
+  <a href="https://github.com/lntechnical2/PyYouTubr/fork">
+    <img src="https://img.shields.io/github/forks/lntechnical2/PyYouTubr?label=Fork&style=social">
+
+  </a>  
+</p></p>
 
 <b> Get Video Data from YouTube link </b>
 
