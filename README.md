@@ -4,7 +4,14 @@
     <img src="https://tg-link.herokuapp.com/dl/0/AgADkawxG1bbiVQ.jpg">
   </a>
 </p>
-Get Video Data from YouTube link 
+</p>
+<p align="center">
+  <a href="https://github.com/lntechnical2/PyYouTube/stargazers">
+    <img src="https://img.shields.io/github/stars/lntechnical2/PyYouTube?style=social">
+
+  </a>
+
+<b> Get Video Data from YouTube link </b>
 
 ## Installation 
 ```bash
