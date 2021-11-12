@@ -34,6 +34,7 @@ SOFTWARE.
 
 
 import re
+import ytthumb
 import urllib.request
 import json
 
@@ -181,7 +182,7 @@ class Data:
       		id = None
       	try :
       		#Get Thumbnails Link From Youtube Video 
-      		thumb= re.findall("\"thumbnails\":\[\{\"url\":\"(.+?)\",\"width",self.source )[0]
+      		thumb= ytthumb.thumbnail(id)
       	except:
       		thumb = None
       	try:
