@@ -23,7 +23,7 @@
 
 ## Installation 
 ```bash
-pip install py-youtube==1.1.2
+pip install py-youtube
 ```
 
 ## Downloads 
