@@ -2,9 +2,12 @@ import pathlib
 import setuptools
 
 
-def read(file: str) -> list:
-    with open(file, encoding="utf-8") as r:
-        return [i.strip() for i in r]
+def requirements(file="requirements.txt") -> list:
+    if os.path.isfile(file):
+        with open(file, encoding="utf-8") as r:
+            return [i.strip() for i in r]
+    else:
+        return []
 
 
 file = pathlib.Path(__file__).parent
@@ -27,6 +30,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
-    install_requires = read("requirements.txt"),
+    install_requires = requirements(),
     python_requires=">=3.6"
 )
