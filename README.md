@@ -3,7 +3,7 @@
 
 Get Video Data from YouTube link 
 
-## Installation 
+## Installation
 ```bash
 pip install py-youtube
 ```
@@ -13,26 +13,28 @@ pip install py-youtube
 
 ```python
 from py_youtube import Data
+
 data = Data("https://youtu.be/HhHzCfrqsoE").data()
 print(data)
 ```
+
 <details>
-  <summary><b>Example Results</summary>
+  <summary><b>Example Results</b></summary>
 <br/>
 
 ```json
 {
-  'id': 'HhHzCfrqsoE',
-   'title': 'How To Create MongoDB Database  Url', 
-   'thumbnails': 'https://i.ytimg.com/vi/HhHzCfrqsoE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLBOkJZAdEpYxQOVdaUxFHdbThH_DQ',  
-   'views': '709', 
-   'likes': '27', 
-   'dislikes': '1', 
-   'publishdate': '2021-08-04', 
-   'category': 'Howto \\u0026 Style', 
-   'channel_name': 'Ln Technical', 
-   'subscriber': '1.67K', 
-   'keywords': 'video, sharing, camera phone, video phone, free, upload'
+    "id": "HhHzCfrqsoE",
+    "title": "How To Create MongoDB Database Url",
+    "thumbnails": "https://i.ytimg.com/vi/HhHzCfrqsoE/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==\\u0026rs=AOn4CLBOkJZAdEpYxQOVdaUxFHdbThH_DQ",
+    "views": "709",
+    "likes": "27",
+    "dislikes": "1",
+    "publishdate": "2021-08-04",
+    "category": "Howto \\u0026 Style",
+    "channel_name": "Ln Technical",
+    "subscriber": "1.67K",
+    "keywords": "video, sharing, camera phone, video phone, free, upload"
 }
 ```
 
@@ -40,9 +42,11 @@ print(data)
 
  
 ## Search Videos
- Search video Data
+#### Search video Data
+
 ```python 
 from py_youtube import Search
+
 videos = Search("ln technical").videos()
 print(videos)
 ```
@@ -192,10 +196,11 @@ print(videos)
 
 </details>
 
-## Search Limits Video 
+## Search Limits Video
 ```python 
-from py_youtube import Search ,Data 
-videos = Search("ln technical", limit = 3).videos()
+from py_youtube import Search, Data
+
+videos = Search("ln technical", limit=3).videos()
 print(videos)
 ```
 <details>
