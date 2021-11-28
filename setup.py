@@ -13,7 +13,7 @@ README = (file / "README.md").read_text()
 
 setuptools.setup(
     name="py-youtube",
-    version="1.0.8",
+    version="1.1.3",
     author="mrlokaman",
     author_email="ln0technical@gmail.com",
     long_description = README,
@@ -27,6 +27,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(),
-    install_requires = read("requirements.txt"),
+    install_requires = read(""),
     python_requires=">=3.6"
 )
