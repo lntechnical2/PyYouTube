@@ -244,7 +244,6 @@ class Data:
       	             "id": id,
       	             "title": title,
       	             "thumbnails": thumb,
-      	             "duration":duration,
       	             "views": views,
       	             "likes": likes,
       	             "dislikes":dislikes,
