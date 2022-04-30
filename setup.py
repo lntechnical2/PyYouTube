@@ -13,7 +13,7 @@ README = (file / "README.md").read_text()
 
 setuptools.setup(
     name="py-youtube",
-    version="1.1.3",
+    version="1.1.5",
     author="mrlokaman",
     author_email="ln0technical@gmail.com",
     long_description = README,
