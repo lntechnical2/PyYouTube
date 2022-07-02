@@ -46,12 +46,13 @@ class Data:
     """
 
     def __init__(self, link):
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36'
-                   }
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36',
+                     'Accept-Language': 'en-US,en;q=0.5'}
         res = urllib.request.Request(link, headers=headers)
         html = urllib.request.urlopen(res)
         self.source = html.read().decode('utf8')
-
+        with open('source.json', 'w') as f:
+            json.dump(self.source, f, indent=4)
     # Get Video id
 
     def id(self):
@@ -138,6 +139,13 @@ class Data:
     # Get likes Of The Video
 
     def likes(self):
+
+        try:
+            likes = re.findall("accessibilityData\":{\"label\":\"(\S+) likes", self.source)[0]
+            return likes
+        except:
+            pass
+
         try:
             likes = re.findall(
                 "iconType\":\"LIKE\"},\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"}}", self.source)[0]
@@ -228,14 +236,21 @@ class Data:
             except:
                 channelName = None
 
+        likes = None
         try:
-            # Get likes Of The Video
-            likes = re.findall(
-                "iconType\":\"LIKE\"},\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"}}", self.source)[0]
-            likes = likes.split(" ")[0]
-            likes = int(likes)
+            likes = re.findall("accessibilityData\":{\"label\":\"(\S+) likes", self.source)[0]
         except:
-            likes = None
+            pass
+        
+        if likes is None:
+            try:
+                # Get likes Of The Video
+                likes = re.findall(
+                    "iconType\":\"LIKE\"},\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"}}", self.source)[0]
+                likes = likes.split(" ")[0]
+                likes = int(likes)
+            except:
+                likes = None
 
         try:
             # Get dislikes Of The Video
