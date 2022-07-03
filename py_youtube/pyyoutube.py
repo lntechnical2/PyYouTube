@@ -150,7 +150,6 @@ class Data:
             likes = re.findall(
                 "iconType\":\"LIKE\"},\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"}}", self.source)[0]
             likes = likes.split(" ")[0]
-            likes = int(likes)
             return likes
         except:
             return None
@@ -247,8 +246,6 @@ class Data:
                 # Get likes Of The Video
                 likes = re.findall(
                     "iconType\":\"LIKE\"},\"defaultText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"(.+?)\"}}", self.source)[0]
-                likes = likes.split(" ")[0]
-                likes = int(likes)
             except:
                 likes = None
 
